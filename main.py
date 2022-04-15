@@ -1,7 +1,6 @@
 from math import ceil
 from tkinter import Canvas, Tk, ALL, Entry, Button, END
 from fetcher import get_words
-from pyperclip import copy as pyperclipCopy
 i = 0
 entry = None
 button = None
@@ -54,7 +53,6 @@ def update_word(words) -> None:
         game_end(canvas, word)
         return
     word = Word(words[i])
-    pyperclipCopy(word.content)
     word.delete_word(canvas, "curr_word")
     word.delete_word(canvas, "footer")
     word.delete_word(canvas, "lives")
