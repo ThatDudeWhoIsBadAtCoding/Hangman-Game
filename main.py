@@ -1,5 +1,5 @@
 from math import ceil
-from tkinter import *
+from tkinter import Canvas, Tk, ALL, Entry, Button, END
 from fetcher import get_words
 from pyperclip import copy as pyperclipCopy
 i = 0
